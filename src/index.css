@@ -1,0 +1,305 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #92b4f4;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inputAndTotal {
+  background-color: #27187e;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+.expenseList {
+  background-color: black;
+  width: 60%;
+  align-self: center;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  margin: 1rem 0rem;
+}
+
+.list .expense {
+  display: flex;
+}
+
+.list .expense p {
+  font-size: 18px;
+  margin: 0px 10px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #27187e;
+  margin: 15px 0px;
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+}
+
+.expenseInput,
+.amountInput {
+  width: 20rem;
+  margin: 0px 5px;
+  padding: 13px 7px;
+  border-radius: 5px;
+  border: none;
+}
+
+.categoryInput {
+  width: 14rem;
+  margin: 0px 5px;
+  padding: 13px 7px;
+  border-radius: 5px;
+  border: none;
+}
+
+.expenseInput,
+.amountInput,
+.categoryInput {
+  font-weight: bold;
+}
+
+.expenseInput,
+.amountInput,
+.categoryInput:focus {
+  outline: none;
+}
+
+.addBtn {
+  padding: 15px 7px;
+  width: 10rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.totalAmount {
+  background-color: #758cfd64;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.totalAmount p {
+  margin-right: 20px;
+}
+
+.showText {
+  text-align: center;
+  margin: 20px 0px;
+  padding: 10px 0px;
+}
+
+.showText p {
+  font-size: 18px;
+}
+
+.lists {
+  margin-top: 10px;
+}
+
+.indicate {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.Title {
+  text-align: center;
+  color: black;
+  margin: 10px;
+}
+
+.vHr {
+  height: 15vh;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+.expense {
+  flex-direction: column;
+}
+
+.expense span {
+  opacity: 0.7;
+}
+
+.newList {
+  background-color: #06197764;
+  color: white;
+}
+
+.expenseBox {
+  width: 50%;
+}
+
+.totalSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.export button {
+  float: right;
+}
+
+.exportBtn {
+  padding: 10px 7px;
+  width: 7rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.listHr {
+  opacity: 0.4;
+}
+
+@media only screen and (max-width: 800px) {
+  .inputAndTotal {
+    background-color: #27187e;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0rem;
+    flex-direction: column;
+  }
+
+  .inputBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .vHr {
+    display: none;
+  }
+
+  .expenseInput,
+  .amountInput {
+    width: 47rem;
+    margin: 9px 5px;
+  }
+
+  .categoryInput {
+    width: 47rem;
+    margin: 9px 5px;
+  }
+  .addBtn {
+    width: 47rem;
+    margin: 9px 0px;
+  }
+  .totalBox {
+    width: 94%;
+    margin: 10px 0px;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .expenseInput,
+  .amountInput {
+    width: 36rem;
+  }
+  .categoryInput {
+    width: 36rem;
+  }
+  .addBtn {
+    width: 36rem;
+  }
+
+  .expenseList {
+    width: 96%;
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  .expenseInput,
+  .amountInput {
+    width: 30rem;
+  }
+  .categoryInput {
+    width: 30rem;
+  }
+  .addBtn {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .expenseInput,
+  .amountInput {
+    width: 25rem;
+  }
+  .categoryInput {
+    width: 25rem;
+  }
+  .addBtn {
+    width: 25rem;
+  }
+}
+
+@media only screen and (max-width: 408px) {
+  .expenseInput,
+  .amountInput {
+    width: 20rem;
+  }
+  .categoryInput {
+    width: 20rem;
+  }
+  .addBtn {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  .expenseInput,
+  .amountInput {
+    width: 15rem;
+  }
+  .categoryInput {
+    width: 15rem;
+  }
+  .addBtn {
+    width: 15rem;
+  }
+}
