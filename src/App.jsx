@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <h1 className="Title">Expense Tracker</h1>
+      <h1 className="Title">ExpenseEase</h1>
       <Expensescreen/>
     </>
   )
