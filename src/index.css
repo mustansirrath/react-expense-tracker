@@ -38,11 +38,10 @@
 
 .expenseList {
   background-color: black;
-  width: 60%;
+  width: 59%;
   align-self: center;
   padding: 2rem 1rem;
   border-radius: 10px;
-  margin: 0.5rem 0rem;
 }
 
 .list .expense {
@@ -175,8 +174,11 @@
   padding: 10px 0px;
 }
 
-.export button {
-  float: right;
+.export {
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ margin: 15px 0px;
 }
 
 .exportBtn {
